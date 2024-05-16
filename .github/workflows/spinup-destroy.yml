@@ -25,6 +25,7 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
 
+
       - name: Create Azure resource group
         if: success()
         run: |
